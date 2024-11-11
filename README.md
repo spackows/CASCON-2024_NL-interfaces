@@ -1,5 +1,5 @@
 # Natural language interfaces powered by large language models
-Supporting material for a poster and workshop, at CASCON 2024, all about using large language models (LLMs) to build natural language (NL) interfaces.
+Supporting material for a poster and workshop, at [CASCON](https://cascon.ca) 2024, all about using large language models (LLMs) to build natural language (NL) interfaces.
 
 Presenters:
 - Ashley Zhao ( <mailto>Ashley.Zhao@ibm.com</mailto> )
@@ -91,7 +91,7 @@ Download: [Poster](poster/NL-interfaces-CASCON-2024.pdf)
 <tr><!------------------------------- 05 ----------------------------------->
 <td valign="top">2:30</td>
 <td valign="top">
-<p><b>Hands-on&nbsp;1:&nbsp;NL&nbsp;prototyping&nbsp;tool</b></p>
+<p><b>Hands-on&nbsp;exercise&nbsp;1:&nbsp;NL&nbsp;prototyping&nbsp;tool</b></p>
 <img src="images/thumb_05_exercise-01.png" width="300" alt="Thumbnail image of slides" />
 </td>
 <td valign="top">
@@ -101,6 +101,7 @@ Download: [Poster](poster/NL-interfaces-CASCON-2024.pdf)
 <li>How application information is saved in a JSON structure</li>
 <li>How that application information is provided as context in LLM prompts</li>
 <li>Answering user questions (contextual help)</li>
+<li>Updating application information in the JSON structure to improve answers</li>
 </ol>
 <p>Download: <a href="slides/05_exercise-01.pdf">Slides</a></p>
 </td>
@@ -121,7 +122,7 @@ Download: [Poster](poster/NL-interfaces-CASCON-2024.pdf)
 <img src="images/thumb_06_ethics.png" width="300" alt="Thumbnail image of slides" />
 </td>
 <td valign="top">
-<p></p>
+<p>There are ethical considerations for designing user interfaces or any kind.  And there are many ethical considerations for using large language models.  When creating NL interfaces, we must consider both of those types of ethical issues <i>as well as</i> additional ethical concerns unique to NL interfaces.</p>
 <p>Download: <a href="slides/06_ethics.pdf">Slides</a></p>
 </td>
 </tr>
@@ -132,7 +133,7 @@ Download: [Poster](poster/NL-interfaces-CASCON-2024.pdf)
 <img src="images/thumb_07_accessibility.png" width="300" alt="Thumbnail image of slides" />
 </td>
 <td valign="top">
-<p></p>
+<p>Many people assume NL interfaces improve accessibility.  But that is a mistaken assumption.  It's true there are cases where NL interfaces might make things easier for some people.  But NL interfaces can be much worse for others, if the interface is not carefully designed.</p>
 <p>Download: <a href="slides/07_accessibility.pdf">Slides</a></p>
 </td>
 </tr>
@@ -140,11 +141,11 @@ Download: [Poster](poster/NL-interfaces-CASCON-2024.pdf)
 <td valign="top">3:45</td>
 <td valign="top">
 <p><b>Choosing&nbsp;a&nbsp;pain&nbsp;point&nbsp;to&nbsp;solve&nbsp;with&nbsp;NL&nbsp;features</b></p>
-<img src="images/thumb_08_choosing-pain-point.png" width="300" alt="Thumbnail image of slides" />
+<img src="images/thumb_08_choosing-pain-points.png" width="300" alt="Thumbnail image of slides" />
 </td>
 <td valign="top">
-<p></p>
-<p>Download: <a href="slides/08_choosing-pain-point.pdf">Slides</a></p>
+<p>As with all AI technologies, choosing the right problem to solve is half the battle.  If a use case is not a good fit for the technology, all the effort in the world will not yield success.</p>
+<p>Download: <a href="slides/08_choosing-pain-points.pdf">Slides</a></p>
 </td>
 </tr>
 <tr><!------------------------------- 09 ----------------------------------->
@@ -154,18 +155,24 @@ Download: [Poster](poster/NL-interfaces-CASCON-2024.pdf)
 <img src="images/thumb_09_experience.png" width="300" alt="Thumbnail image of slides" />
 </td>
 <td valign="top">
-<p></p>
+<p>A member of our team who has been working on real NL interfaces features for the past year shares her experience with challenges and lessons learned.</p>
 <p>Download: <a href="slides/09_experience.pdf">Slides</a></p>
 </td>
 </tr>
 <tr><!------------------------------- 10 ----------------------------------->
 <td valign="top">4:20</td>
 <td valign="top">
-<p><b>Hands-on&nbsp;2:&nbsp;Prototyping&nbsp;NL&nbsp;features</b></p>
+<p><b>Hands-on&nbsp;exercise&nbsp;2:&nbsp;Prototyping&nbsp;NL&nbsp;features</b></p>
 <img src="images/thumb_10_exercise-02.png" width="300" alt="Thumbnail image of slides" />
 </td>
 <td valign="top">
-<p></p>
+<p>In this exercise, we'll introduce the NL interface prototyping tool:</p>
+<ol>
+<li>Instructing the application to take actions</li>
+<li>Identifying input element related to an action request</li>
+<li>Identifying any run-time value associated with an action request</li>
+<li>Updating prompts to improve results</li>
+</ol>
 <p>Download: <a href="slides/10_exercise-02.pdf">Slides</a></p>
 </td>
 </tr>
