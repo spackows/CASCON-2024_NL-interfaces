@@ -2,11 +2,11 @@
 Supporting material for a poster and workshop, at [CASCON](https://cascon.ca) 2024, all about using large language models (LLMs) to build natural language (NL) interfaces.
 
 Presenters:
-- Ashley Zhao ( <mailto>Ashley.Zhao@ibm.com</mailto> )
-- Kelly Xiang ( <mailto>Kelly.Xiang@ibm.com</mailto> )
-- Sara Elsharawy ( <mailto>saraelsh@ibm.com</mailto> )
 - Ruby Bagga ( <mailto>ruby.bagga@ibm.com</mailto> )
+- Sara Elsharawy ( <mailto>saraelsh@ibm.com</mailto> )
 - Sarah Packowski ( <mailto>spackows@ca.ibm.com</mailto> )
+- Kelly Xiang ( <mailto>Kelly.Xiang@ibm.com</mailto> )
+- Ashley Zhao ( <mailto>Ashley.Zhao@ibm.com</mailto> )
 
 <p>&nbsp;</p>
 
@@ -14,15 +14,17 @@ Presenters:
 ## Introduction
 NL interfaces have been around for more than 50 years!  
 
-What's new is how LLMs - and retrieval-augmented generation (RAG) in particular - make implementing NL interfaces much easier.
+What's new is how LLMs - and retrieval-augmented generation (RAG), in particular - make implementing NL interfaces much easier.
 
-In this hands-on workshop series, participants will learn the basics of NL interfaces and use a web app to prototype NL interface features.
+In this hands-on workshop series, participants will learn the basics of NL interfaces and use a web app* to prototype NL interface features.
+
+\* The NL interface prototyping tool used in this workshop is powered by: [IBM watsonx.ai](watsonx.ai)
 
 <p>&nbsp;</p>
 
 
 ## Poster
-This poster defines the breadth of NL interfaces, explains how LLMs make it much easier to building NL interfaces, and proposes a simple-to-build, intuitive-for-users approach to creating NL interfaces for software applications.
+This poster defines the breadth of NL interfaces, explains how LLMs make it much easier to build NL interfaces, and proposes a simple-to-build, intuitive-for-users approach to creating NL interfaces for software applications.
 
 Download: [Poster](poster/NL-interfaces-CASCON-2024.pdf)
 
@@ -49,7 +51,7 @@ Download: [Poster](poster/NL-interfaces-CASCON-2024.pdf)
 <ul>
 <li>Definition: what is an NL interface?</li>
 <li>Motivation: why bother with NL interfaces?</li>
-<li>Brief history of the study of NL interfaces</li>
+<li>Brief history of NL interface research</li>
 </ul>
 <p>Download: <a href="slides/01_intro.pdf">Slides</a></p>
 </td>
@@ -84,7 +86,7 @@ Download: [Poster](poster/NL-interfaces-CASCON-2024.pdf)
 </td>
 <td valign="top">
 <p>In the past, multiple, complex natural language processing techniques were needed to analyze user input, map it to to a structured representation, and then translate that structured representation to something a machine could execute.</p>
-<p>Now, an LLM can translate user input directly to something a machine can execute.
+<p>Now, an LLM can translate user input directly to something a machine can execute.  Wow!</p>
 <p>Download: <a href="slides/04_llms-simplify.pdf">Slides</a></p>
 </td>
 </tr>
@@ -122,7 +124,7 @@ Download: [Poster](poster/NL-interfaces-CASCON-2024.pdf)
 <img src="images/thumb_06_ethics.png" width="300" alt="Thumbnail image of slides" />
 </td>
 <td valign="top">
-<p>There are ethical considerations for designing user interfaces or any kind.  And there are many ethical considerations for using large language models.  When creating NL interfaces, we must consider both of those types of ethical issues <i>as well as</i> additional ethical concerns unique to NL interfaces.</p>
+<p>There are ethical considerations for designing user interfaces of any kind.  And there are many ethical considerations for using large language models.  When creating NL interfaces, we must consider both of those types of ethical issues <i>as well as</i> additional ethical concerns unique to NL interfaces.</p>
 <p>Download: <a href="slides/06_ethics.pdf">Slides</a></p>
 </td>
 </tr>
@@ -144,7 +146,7 @@ Download: [Poster](poster/NL-interfaces-CASCON-2024.pdf)
 <img src="images/thumb_08_choosing-pain-points.png" width="300" alt="Thumbnail image of slides" />
 </td>
 <td valign="top">
-<p>As with all AI technologies, choosing the right problem to solve is half the battle.  If a use case is not a good fit for the technology, all the effort in the world will not yield success.</p>
+<p>As with all AI solutions, choosing the right problem to solve is half the battle.  If a use case is not a good fit for the technology, all the effort in the world will not yield success.</p>
 <p>Download: <a href="slides/08_choosing-pain-points.pdf">Slides</a></p>
 </td>
 </tr>
@@ -155,7 +157,7 @@ Download: [Poster](poster/NL-interfaces-CASCON-2024.pdf)
 <img src="images/thumb_09_experience.png" width="300" alt="Thumbnail image of slides" />
 </td>
 <td valign="top">
-<p>A member of our team who has been working on real NL interfaces features for the past year shares her experience with challenges and lessons learned.</p>
+<p>A member of our team who has been working on NL interface features for the past year shares her experience, challenges, and lessons learned.</p>
 <p>Download: <a href="slides/09_experience.pdf">Slides</a></p>
 </td>
 </tr>
@@ -166,12 +168,12 @@ Download: [Poster](poster/NL-interfaces-CASCON-2024.pdf)
 <img src="images/thumb_10_exercise-02.png" width="300" alt="Thumbnail image of slides" />
 </td>
 <td valign="top">
-<p>In this exercise, we'll introduce the NL interface prototyping tool:</p>
+<p>In this exercise, we'll use the NL interface prototyping tool to perform more advanced interactions:</p>
 <ol>
 <li>Instructing the application to take actions</li>
-<li>Identifying input element related to an action request</li>
-<li>Identifying any run-time value associated with an action request</li>
-<li>Updating prompts to improve results</li>
+<li>Identifying the input element related to an action request</li>
+<li>Identifying the run-time value associated with an action request</li>
+<li>Updating LLM prompts to improve results</li>
 </ol>
 <p>Download: <a href="slides/10_exercise-02.pdf">Slides</a></p>
 </td>
