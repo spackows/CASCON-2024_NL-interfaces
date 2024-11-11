@@ -53,7 +53,7 @@ Download: [Poster](poster/NL-interfaces-CASCON-2024.pdf)
 <li>Motivation: why bother with NL interfaces?</li>
 <li>Brief history of NL interface research</li>
 </ul>
-<p>Download: <a href="slides/01_intro.pdf">Slides</a></p>
+<!-- <p>Download: <a href="slides/01_intro.pdf">Slides</a></p> -->
 </td>
 </tr>
 <tr><!------------------------------- 02 ----------------------------------->
@@ -64,7 +64,7 @@ Download: [Poster](poster/NL-interfaces-CASCON-2024.pdf)
 </td>
 <td valign="top">
 <p>If researchers have been studying NL interfaces for so long, why aren't there NL interfaces everywhere?  Why have NL interfaces been so difficult to build?</p>
-<p>Download: <a href="slides/02_challenges.pdf">Slides</a></p>
+<!-- <p>Download: <a href="slides/02_challenges.pdf">Slides</a></p> -->
 </td>
 </tr>
 <tr><!------------------------------- 03 ----------------------------------->
@@ -75,7 +75,7 @@ Download: [Poster](poster/NL-interfaces-CASCON-2024.pdf)
 </td>
 <td valign="top">
 <p>This is what we learned when we sat down with some users to see how they really used natural language to interact with a software application.</p>
-<p>Download: <a href="slides/03_user-research.pdf">Slides</a></p>
+<!-- <p>Download: <a href="slides/03_user-research.pdf">Slides</a></p> -->
 </td>
 </tr>
 <tr><!------------------------------- 04 ----------------------------------->
@@ -87,7 +87,7 @@ Download: [Poster](poster/NL-interfaces-CASCON-2024.pdf)
 <td valign="top">
 <p>In the past, multiple, complex natural language processing techniques were needed to analyze user input, map it to to a structured representation, and then translate that structured representation to something a machine could execute.</p>
 <p>Now, an LLM can translate user input directly to something a machine can execute.  Wow!</p>
-<p>Download: <a href="slides/04_llms-simplify.pdf">Slides</a></p>
+<!-- <p>Download: <a href="slides/04_llms-simplify.pdf">Slides</a></p> -->
 </td>
 </tr>
 <tr><!------------------------------- 05 ----------------------------------->
@@ -105,7 +105,7 @@ Download: [Poster](poster/NL-interfaces-CASCON-2024.pdf)
 <li>Answering user questions (contextual help)</li>
 <li>Updating application information in the JSON structure to improve answers</li>
 </ol>
-<p>Download: <a href="slides/05_exercise-01.pdf">Slides</a></p>
+<!-- <p>Download: <a href="slides/05_exercise-01.pdf">Slides</a></p> -->
 </td>
 </tr>
 <tr><!----------------------------- break ---------------------------------->
@@ -125,7 +125,7 @@ Download: [Poster](poster/NL-interfaces-CASCON-2024.pdf)
 </td>
 <td valign="top">
 <p>There are ethical considerations for designing user interfaces of any kind.  And there are many ethical considerations for using large language models.  When creating NL interfaces, we must consider both of those types of ethical issues <i>as well as</i> additional ethical concerns unique to NL interfaces.</p>
-<p>Download: <a href="slides/06_ethics.pdf">Slides</a></p>
+<!-- <p>Download: <a href="slides/06_ethics.pdf">Slides</a></p> -->
 </td>
 </tr>
 <tr><!------------------------------- 07 ----------------------------------->
@@ -136,7 +136,7 @@ Download: [Poster](poster/NL-interfaces-CASCON-2024.pdf)
 </td>
 <td valign="top">
 <p>Many people assume NL interfaces improve accessibility.  But that is a mistaken assumption.  It's true there are cases where NL interfaces might make things easier for some people.  But NL interfaces can be much worse for others, if the interface is not carefully designed.</p>
-<p>Download: <a href="slides/07_accessibility.pdf">Slides</a></p>
+<!-- <p>Download: <a href="slides/07_accessibility.pdf">Slides</a></p> -->
 </td>
 </tr>
 <tr><!------------------------------- 08 ----------------------------------->
@@ -147,7 +147,7 @@ Download: [Poster](poster/NL-interfaces-CASCON-2024.pdf)
 </td>
 <td valign="top">
 <p>As with all AI solutions, choosing the right problem to solve is half the battle.  If a use case is not a good fit for the technology, all the effort in the world will not yield success.</p>
-<p>Download: <a href="slides/08_choosing-pain-points.pdf">Slides</a></p>
+<!-- <p>Download: <a href="slides/08_choosing-pain-points.pdf">Slides</a></p> -->
 </td>
 </tr>
 <tr><!------------------------------- 09 ----------------------------------->
@@ -158,7 +158,7 @@ Download: [Poster](poster/NL-interfaces-CASCON-2024.pdf)
 </td>
 <td valign="top">
 <p>A member of our team who has been working on NL interface features for the past year shares her experience, challenges, and lessons learned.</p>
-<p>Download: <a href="slides/09_experience.pdf">Slides</a></p>
+<!-- <p>Download: <a href="slides/09_experience.pdf">Slides</a></p> -->
 </td>
 </tr>
 <tr><!------------------------------- 10 ----------------------------------->
@@ -175,7 +175,7 @@ Download: [Poster](poster/NL-interfaces-CASCON-2024.pdf)
 <li>Identifying the run-time value associated with an action request</li>
 <li>Updating LLM prompts to improve results</li>
 </ol>
-<p>Download: <a href="slides/10_exercise-02.pdf">Slides</a></p>
+<!-- <p>Download: <a href="slides/10_exercise-02.pdf">Slides</a></p> -->
 </td>
 </tr>
 </table>
