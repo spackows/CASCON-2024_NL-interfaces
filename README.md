@@ -33,7 +33,14 @@ Download: [Poster](poster/NL-interfaces-CASCON-2024.pdf)
 <p>&nbsp;</p>
 
 
-## Workshop agenda
+## Workshop
+**Date:** Wednesday, November 13th, 2024<br/>
+**Time:** 1:30pm<br/>
+**Room:** D2
+
+_*Participants should bring a laptop to access the NL interface prototyping web app online._
+
+### Agenda
 <table>
 <tr>
 <th>Time</th>
