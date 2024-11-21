@@ -16,7 +16,7 @@ NL interfaces have been around for more than 50 years!
 
 What's new is how LLMs - and retrieval-augmented generation (RAG), in particular - make implementing NL interfaces much easier.
 
-In this hands-on workshop series, participants will learn the basics of NL interfaces and use a web app* to prototype NL interface features.
+In this hands-on workshop series, participants learn the basics of NL interfaces and use a web app* to prototype NL interface features.
 
 \* The NL interface prototyping tool used in this workshop is powered by: [IBM watsonx.ai](watsonx.ai)
 
