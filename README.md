@@ -60,7 +60,7 @@ _*Participants should bring a laptop to access the NL interface prototyping web 
 <li>Motivation: why bother with NL interfaces?</li>
 <li>Brief history of NL interface research</li>
 </ul>
-<p>Slides: <a href="slides/01_intro.pdf">01_intro.pdf</a></p>
+<p>See:&nbsp;&nbsp;<a href="slides/01_intro.pdf">slides (PDF)</a>&nbsp;&nbsp;and&nbsp;&nbsp;<a href="https://youtu.be/d-DJajQOvWE">video (YouTube)</a> </p>
 </td>
 </tr>
 <tr><!------------------------------- 02 ----------------------------------->
@@ -112,7 +112,7 @@ _*Participants should bring a laptop to access the NL interface prototyping web 
 <li>Answering user questions (contextual help)</li>
 <li>Updating application information in the JSON structure to improve answers</li>
 </ol>
-<p>Slides: <a href="slides/05_exercise-01.pdf">05_exercise-01.pdf</a></p>
+<p>See:&nbsp;&nbsp;<a href="slides/05_exercise-01.pdf">slides (PDF)</a>&nbsp;&nbsp;and&nbsp;&nbsp;<a href="https://youtu.be/zGAyCTOOVww">video (YouTube)</a></p>
 </td>
 </tr>
 <tr><!----------------------------- break ---------------------------------->
@@ -182,7 +182,7 @@ _*Participants should bring a laptop to access the NL interface prototyping web 
 <li>Identifying the run-time value associated with an action request</li>
 <li>Updating LLM prompts to improve results</li>
 </ol>
-<p>Slides: <a href="slides/10_exercise-02.pdf">10_exercise-02.pdf</a></p>
+<p>See:&nbsp;&nbsp;<a href="slides/10_exercise-02.pdf">slides (PDF)</a>&nbsp;&nbsp;and&nbsp;&nbsp;<a href="https://www.youtube.com/watch?v=zGAyCTOOVww&t=470s">video (YouTube)</a></p>
 </td>
 </tr>
 </table>
