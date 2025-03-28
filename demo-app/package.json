@@ -1,0 +1,21 @@
+{
+  "name": "llm-nli-cascon",
+  "main": "server.js",
+  "description": "An app for prototyping NL interfaces",
+  "version": "0.1.1",
+  "private": true,
+  "engines": {
+    "node": "22.*"
+  },
+  "scripts": {
+    "start": "node server.js"
+  },
+  "dependencies": {
+    "ejs": "^3.1.10",
+    "express": "^4.21.1",
+    "ibm_db": "^3.2.4",
+    "short-unique-id": "^5.2.0",
+    "underscore": "^1.13.7"
+  },
+  "author": "Sarah Packowski"
+}

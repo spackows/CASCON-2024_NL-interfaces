@@ -1,0 +1,80 @@
+
+#filter_icon_div
+{
+margin: 0px;
+padding: 0px;
+position: absolute;
+top: 20px;
+left: 30px;
+font-size: 30px;
+font-weight: bold;
+color: midnightblue;
+cursor: pointer;
+}
+
+
+#filters_container_div
+{
+margin: 0px;
+padding: 20px 0px 0px 0px;
+position: absolute;
+top: 0px;
+left: 0px;
+bottom: 0px;
+width: 330px;
+background: white;
+overflow-y: auto;
+border-right: 1px solid grey;
+}
+
+#filters_close_x
+{
+margin: 0px;
+padding: 0px;
+position: absolute;
+top: 10px;
+right: 20px;
+font-weight: bold;
+color: red;
+cursor: pointer;
+}
+
+#reload_btn
+{
+margin: 0px;
+position: absolute;
+top: 40px;
+right: 20px;
+/*
+width: 80px;
+min-width: 80px;
+*/
+}
+
+.filter_container
+{
+margin: 10px 20px 20px 20px;
+padding: 10px;
+}
+
+
+.txt_input, .date_input
+{
+margin: 5px 0px 0px 0px;
+padding: 4px 6px 4px 6px;
+border: 1px solid lightgrey;
+border-top: 1px solid grey;
+font-family: courier;
+font-size: 100%;
+background: white;
+}
+
+.txt_input
+{
+width: 70px;
+}
+
+.show_evaluated_cb
+{
+margin: 10px 0px 0px 0px;
+}

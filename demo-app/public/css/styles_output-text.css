@@ -1,0 +1,26 @@
+
+
+#output_txt_container_div
+{
+/* border: 1px solid yellow; */
+}
+
+#output_txt_div
+{
+margin: 0px 0px 20px 0px;
+padding: 20px;
+/* height: 110px; */
+/* border: 1px solid purple; */
+}
+
+#output_txt
+{
+margin: 0px;
+padding: 10px;
+width: 90%;
+height: 60px;
+background: whitesmoke;
+border: 1px solid lightgrey;
+white-space: pre-wrap;
+overflow: auto;
+}

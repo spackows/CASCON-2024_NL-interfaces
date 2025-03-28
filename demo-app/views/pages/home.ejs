@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+<link rel="stylesheet" type="text/css" href="/css/styles_general.css">
+<link rel="stylesheet" type="text/css" href="/css/styles_header.css">
+<link rel="stylesheet" type="text/css" href="/css/styles_home.css">
+<script type="text/javascript" src="/javascript/javascript_home.js"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+</head>
+
+<body onload="loadProjects();showError();">
+<input id="error_str"   style="display: none;" value="<%= error_str %>">
+
+<div id="major_header_div">
+<h1 id="major_header_title"><a href="./"><b>NLI</b> <span style="letter-spacing: 2px;">proto</span></a></h1>
+</div>
+
+<div id="main_div">
+
+<div id="projects_div">
+<p id="projects_title">Select a sample project:</p>
+<div id="projects_container_div">
+<select id="project_selector" onchange="selectProject(this);"></select>
+</div>
+</div>
+
+</div>
+
+</body>
+
+</html>

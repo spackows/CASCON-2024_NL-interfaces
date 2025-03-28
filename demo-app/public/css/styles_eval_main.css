@@ -1,0 +1,128 @@
+
+
+#totals_div
+{
+margin: 0px;
+padding: 0px;
+position: absolute;
+top: 30px;
+right: 30px;    
+}
+
+
+#eval_main_div
+{
+margin: 0px;
+padding: 0px;
+position: absolute;
+top: 70px;
+right: 20px;
+bottom: 30px;
+left: 30px;
+overflow-y: scroll;
+background: lightgrey;
+/* border: 1px solid green; */
+}
+
+.card
+{
+background: white;
+border: 1px solid lightgrey;
+box-shadow: 7px 7px 4px grey;
+}
+
+.qa_div
+{
+margin: 20px 60px 20px 20px;
+padding: 0px;
+border: 1px solid lightgrey;
+}
+
+
+.question_td
+{
+padding: 10px 10px 10px 20px; 
+border-right: 1px solid lightgrey;
+}
+
+.ts_div
+{
+margin: 0px 0px 8px 0px; 
+padding: 0px;
+color: grey; 
+font-size: 90%; 
+}
+
+.qa_id_div
+{
+display: inline-block;
+font-size: 80%; 
+font-style: italic;
+}
+
+.custom_json_container_div
+{
+margin: 20px 0px 0px 0px;
+padding: 0px;
+color: grey;
+}
+
+.custom_json_container_div p
+{
+margin: 0px;
+padding: 0px;
+}
+
+.custom_json_container_div ul
+{
+margin: 0px;
+padding: 0px;
+}
+
+.custom_json_container_div li
+{
+margin: 0px 0px 0px 20px;
+padding: 0px;
+}
+
+.answer_td
+{
+padding: 10px;
+border-right: 1px solid lightgrey;
+}
+
+.links_ul
+{
+margin: 10px 20px 10px 20px;
+padding: 0px;
+}
+
+.eval_td
+{
+padding: 10px 20px 10px 10px;
+width: 330px;
+}
+
+.evals_tbl
+{
+margin: 0px;
+padding: 0px;
+border-collapse: collapse;
+width: 100%;
+}
+
+.evals_tbl tr:nth-child( odd )
+{
+background-color: whitesmoke;
+}
+
+.evals_tbl td
+{
+margin: 0px;
+padding: 6px 0px 6px 0px;
+font-size: 90%;
+}
+
+
+
+

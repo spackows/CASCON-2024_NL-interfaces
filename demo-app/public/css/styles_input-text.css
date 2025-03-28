@@ -1,0 +1,58 @@
+
+
+#user_input_txt_container_div
+{
+/* border: 1px solid yellow; */
+}
+
+#user_input_txt_div
+{
+margin: 0px 0px 20px 0px;
+padding: 20px;
+height: 110px;
+/* border: 1px solid purple; */
+}
+
+#user_input_txt
+{
+margin: 0px;
+padding: 10px;
+width: 90%;
+background: whitesmoke;
+border: 1px solid lightgrey;
+resize: none;
+}
+
+#txt_input_btn
+{
+margin: 10px 0px 15px 0px;
+/*
+position: absolute;
+right: 20px;
+bottom: 15px;
+*/
+border: 2px solid midnightblue;
+}
+
+#txt_input_btn:focus
+{
+border: 2px solid gold;
+}
+
+#mouse_pos_div
+{
+margin: 0px;
+padding: 0px;
+/*
+position: absolute;
+left: 20px;
+bottom: 15px;
+*/
+height: 20px;
+width: 120px;
+/* text-align: center; */
+font-family: Courier New;
+/* border: 1px solid orange; */
+}
+
+

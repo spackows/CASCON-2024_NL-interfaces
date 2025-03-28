@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+<link rel="stylesheet" type="text/css" href="/css/styles_general.css">
+<link rel="stylesheet" type="text/css" href="/css/styles_filters.css">
+<link rel="stylesheet" type="text/css" href="/css/styles_input.css">
+<link rel="stylesheet" type="text/css" href="/css/styles_input-prompts.css">
+<link rel="stylesheet" type="text/css" href="/css/styles_input-elem-arr.css">
+<link rel="stylesheet" type="text/css" href="/css/styles_input-logs.css">
+<link rel="stylesheet" type="text/css" href="/css/styles_input-text.css">
+<link rel="stylesheet" type="text/css" href="/css/styles_output-text.css">
+<link rel="stylesheet" type="text/css" href="/css/styles_eval_main.css">
+<link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.3.0/css/font-awesome.css" rel="stylesheet" type="text/css">
+<script type="text/javascript" src="/javascript/javascript_general.js"></script>
+<script type="text/javascript" src="/javascript/javascript_filters.js"></script>
+<script type="text/javascript" src="/javascript/javascript_prompts.js"></script>
+<script type="text/javascript" src="/javascript/javascript_elem-arr.js"></script>
+<script type="text/javascript" src="/javascript/javascript_data.js"></script>
+<script type="text/javascript" src="/javascript/javascript_pagedown.js"></script>
+<script type="text/javascript" src="/javascript/javascript_mouse.js"></script>
+<script type="text/javascript" src="/javascript/javascript_txt_input.js"></script>
+<script type="text/javascript" src="/javascript/javascript_logs.js"></script>
+<script type="text/javascript" src="/javascript/javascript_llm.js"></script>
+<script type="text/javascript" src="/javascript/javascript_web-app-element-details.js"></script>
+<script type="text/javascript" src="/javascript/javascript_min-max.js"></script>
+<script type="text/javascript" src="/javascript/javascript_nli.js"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/underscore@latest/underscore-umd-min.js"></script>
+</head>
+
+
+<body onload="_processNLIParms();populateFilters();loadData();" onmousemove="mouseMove(event);" onmouseup="stopTrackingMouseForResize();" onresize="adjustWidths();">
+<!-- Prototyping tool parms -->
+<input id="project_id_parm"    style="display: none;" value="<%= project_id %>" >
+<input id="slider_width_parm"  style="display: none;" value="<%= slider_width %>" >
+<input id="right_scroll_parm"  style="display: none;" value="<%= right_scroll %>" >
+<input id="collapse_parm"      style="display: none;" value="<%= collapse %>" >
+<input id="prompt_index_parm"  style="display: none;" value="<%= prompt_index %>" >
+<input id="prompt_height_parm" style="display: none;" value="<%= prompt_height %>" >
+<input id="elem_height_parm"   style="display: none;" value="<%= elem_height %>" >
+<input id="selected_logs_parm" style="display: none;" value="<%= selected_logs %>" >
+<input id="logs_height_parm"   style="display: none;" value="<%= logs_height %>" >
+<!-- Mock-up parms -->
+<input id="first_date_parm"  style="display: none;" value="<%= first_date %>" >
+<input id="final_date_parm"  style="display: none;" value="<%= final_date %>" >
+<input id="sample_size_parm" style="display: none;" value="<%= sample_size %>">
+<input id="evaluated_parm"   style="display: none;" value="<%= evaluated %>"  >
+
+
+<!-- LEFT-HAND SIDE -->
+<div id="left_hand_div" onclick="closeMenu(event);" onkeydown="pageDown(event);" >
+
+<!-- MAIN AREA -->
+<div id="eval_main_div"></div>
+<div id="totals_div"></div>
+
+<!-- FILTER MENU -->
+<div id="filter_icon_div" class="fa fa-filter" title="Click to open filters menu" onclick="openFiltersMenu();"></div>
+<div id="filters_container_div" style="display: none;">
+<div id="filters_close_x" title="Close filters menu" onclick="closeFiltersMenu();">X</div>
+<button id="reload_btn" title="Reload page to apply filters" onclick="reloadPage();">Reload</button>
+<!-- Date range -->
+<div class="filter_container">
+<h3>Date range</h3>
+<div><p>First day</p><input type="date" class="date_input" id="first_date_input"></div>
+<div><p>Final day</p><input type="date" class="date_input" id="final_date_input"></div>
+</div>
+<!-- Evaluation status-->
+<div class="filter_container">
+<h3>Evaluation status</h3>
+<div><input type="checkbox" id="show_evaluated_cb" class="show_evaluated_cb" onclick="checkEvalStatus(this);" checked /> Show evaluated answers</div>
+<div><input type="checkbox" id="show_unevaluated_cb"  class="show_evaluated_cb" onclick="checkEvalStatus(this);" checked /> Show unevaluated answers</div>
+</div>
+<!-- Sample -->
+<div class="filter_container">
+<h3>Random sample size</h3>
+<input class="txt_input" id="sample_size_input">
+</div>
+</div>
+
+</div><!-- left_hand_div -->
+
+
+<!-- RIGHT-HAND SIDE -->
+<div id="right_hand_div">
+
+<!-- PROMPTS -->
+<div id="prompts_container_div" class="container_div">
+<div class="label_div">
+<button id="prompts_chevron_button" class="chevron_button" title="Minimize prompts" onclick="mixMax(this);">&#8744;</button>
+<div class="label_txt">Prompts</div>
+</div>
+<div id="prompts_div">
+<select id="prompt_selector" onchange="selectPrompt();"></select>
+<div id="prompts_txt_container"></div>
+</div>
+</div>
+
+<!-- ELEMENT DETAILS ARR -->
+<div id="elem_arr_container_div" class="container_div">
+<div class="label_div">
+<button id="elem_arr_chevron_button" class="chevron_button" title="Minimize config JSON" onclick="mixMax(this);">&#8744;</button>
+<div class="label_txt">Element details</div>
+</div>
+<div id="elem_arr_div">
+<textarea id="elem_arr_txt" onchange="enableElemArrSave();" onkeyup="enableElemArrSave();"></textarea>
+<button id="elem_arr_save_btn" title="Save element details changes" onclick="_saveElemArr();" disabled=true>Save</button>
+</div>
+</div>
+
+<!-- LOGS -->
+<div id="logs_container_div" class="container_div">
+<div class="label_div">
+<button id="logs_chevron_button" class="chevron_button" title="Minimize logs" onclick="mixMax(this);">&#8744;</button>
+<div class="label_txt">Logs</div>
+</div>
+<div id="logs_div">
+<ul id="logs_tabs_ul">
+<li id="logs_highlights_tab" onclick="showLogs(this);" title="Show only highlights" class="logs_selected">Highlights</li>
+<li id="logs_details_tab"    onclick="showLogs(this);" title="Show full prompts submitted and LLM-generated output" class="logs_not_selected">Details</li>
+</ul>
+<div id="logs_txt" onmouseup="resizeLogs(this);"></div>
+<div id="logs_details_txt" onmouseup="resizeLogs(this);" style="display: none;"></div>
+<div id="logs_spinner" class="spinner" style="display: none;"></div>
+</div>
+</div>
+
+<!-- TEXT INPUT -->
+<div id="user_input_txt_container_div" class="container_div">
+<div class="label_div">
+<button id="user_input_txt_chevron_button" class="chevron_button" title="Minimize text input" onclick="mixMax(this);">&#8744;</button>
+<div class="label_txt">Text input</div>
+</div>
+<div id="user_input_txt_div">
+<textarea id="user_input_txt" onkeydown="checkForReturn(event);"></textarea>
+<button id="txt_input_btn" onclick="submitTextInput();" title="Click to submit text input">Submit</button>
+</div>
+</div>
+
+<!-- TEXT OUTPUT -->
+<div id="output_txt_container_div" class="container_div">
+<div class="label_div">
+<button id="output_txt_chevron_button" class="chevron_button" title="Minimize text output" onclick="mixMax(this);">&#8744;</button>
+<div class="label_txt">Text output</div>
+</div>
+<div id="output_txt_div">
+<div id="output_txt"></div>
+</div>
+</div>
+
+</div><!-- right_hand_div -->
+
+
+<!-- DIVIDER -->
+<div id="resizer_div" onmousedown="startTrackingMouseForResize(event);" style="right: 470px;"></div>
+
+
+</body>
+</html>

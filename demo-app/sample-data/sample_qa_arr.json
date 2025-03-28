@@ -1,0 +1,92 @@
+[
+   {
+      "QA_ID"        : "qa_pOkRSToKOOlQ",
+      "TS"           : "1704910201576",
+      "TS_FORMATTED" : "2024-01-07 18:10:01 (UTC)",
+      "QUESTION"     : "Should I plant tomatoes in shade or sun?",
+      "ANSWER"       : "Tomato plants do best in full sun.",
+      "ARTICLES_ARR" : [ { "title": "Growing tomatoes" } ],
+      "CUSTOM_JSON"  : { "question_class": "what-is" }
+   },
+   {
+      "QA_ID"        : "qa_Ewy7gRdAslTo",
+      "TS"           : "1704910202436",
+      "TS_FORMATTED" : "2024-01-19 18:10:02 (UTC)",
+      "QUESTION"     : "What's the difference between pickling cucumbers and slicing cucumbers?",
+      "ANSWER"       : "Pickling cucumbers are smaller than slicing cucumbers.",
+      "ARTICLES_ARR" : [ { "title": "Cucumbers for beginners" } ],
+      "CUSTOM_JSON"  : { "question_class": "what-is" }
+   },
+   {
+      "QA_ID"        : "qa_LJpiFWa2IQHV",
+      "TS"           : "1704910246649",
+      "TS_FORMATTED" : "2024-01-28 18:10:46 (UTC)",
+      "QUESTION"     : "How do you encourage tomato plants to produce more fruit?",
+      "ANSWER"       : "Pruning suckers and even pinching the tips.",
+      "ARTICLES_ARR" : [ { "title": "Growing tomatoes" } ],
+      "CUSTOM_JSON"  : { "question_class": "how-to" }
+   },
+   {
+      "QA_ID"        : "qa_cWx9MFWUBAcH",
+      "TS"           : "1704910262210",
+      "TS_FORMATTED" : "2024-02-02 18:11:02 (UTC)",
+      "QUESTION"     : "I want to order a garden hose",
+      "ANSWER"       : "No good answer was found in the knowledge base",
+      "ARTICLES_ARR" : [],
+      "CUSTOM_JSON"  : { "question_class": "what-is" }
+   },
+   {
+      "QA_ID"        : "qa_vtVPimqSyMWk",
+      "TS"           : "1704910281710",
+      "TS_FORMATTED" : "2024-02-10 18:11:21 (UTC)",
+      "QUESTION"     : "How can you keep animals away from your tomatoes?",
+      "ANSWER"       : "I don't know",
+      "ARTICLES_ARR" : [ { "title": "Growing tomatoes" } ],
+      "CUSTOM_JSON"  : { "question_class": "how-to" }
+   },
+   {
+      "QA_ID"        : "qa_1EmKg0Bjrs2T",
+      "TS"           : "1704910340087",
+      "TS_FORMATTED" : "2024-02-10 18:12:20 (UTC)",
+      "QUESTION"     : "Why did my cucumber plant only produce 2 huge cucumbers then no more?",
+      "ANSWER"       : "I don't know",
+      "ARTICLES_ARR" : [ { "title": "Cucumbers for beginners" } ],
+      "CUSTOM_JSON"  : { "question_class": "what-is" }
+   },
+   {
+      "QA_ID"        : "qa_DeM6YbCPSoPb",
+      "TS"           : "1704910379614",
+      "TS_FORMATTED" : "2024-02-11 18:12:59 (UTC)",
+      "QUESTION"     : "How tall can tomatoes grow?",
+      "ANSWER"       : "six feet or more",
+      "ARTICLES_ARR" : [ { "title": "Growing tomatoes" } ],
+      "CUSTOM_JSON"  : { "question_class": "what-is" }
+   },
+   {
+      "QA_ID"        : "qa_K3k6liD6L8zJ",
+      "TS"           : "1704910390784",
+      "TS_FORMATTED" : "2024-02-15 18:13:10 (UTC)",
+      "QUESTION"     : "Which grows larger, tomatoes or cucumbers?",
+      "ANSWER"       : "tomatoes",
+      "ARTICLES_ARR" : [ { "title": "Growing tomatoes" } ],
+      "CUSTOM_JSON"  : { "question_class": "what-is" }
+   },
+   {
+      "QA_ID"        : "qa_VgBOwhYvCupN",
+      "TS"           : "1704910414474",
+      "TS_FORMATTED" : "2024-02-18 18:13:34 (UTC)",
+      "QUESTION"     : "How long before I can harvest my cukes?",
+      "ANSWER"       : "No good answer was found in the knowledge base",
+      "ARTICLES_ARR" : [],
+      "CUSTOM_JSON"  : { "question_class": "what-is" }
+   },
+   {
+      "QA_ID"        : "qa_zENWbbHFCzs5",
+      "TS"           : "1704910432135",
+      "TS_FORMATTED" : "2024-02-21 18:13:52 (UTC)",
+      "QUESTION"     : "How large do pepper plants grow?",
+      "ANSWER"       : "No good answer was found in the knowledge base",
+      "ARTICLES_ARR" : [],
+      "CUSTOM_JSON"  : { "question_class": "what-is" }
+   }
+]

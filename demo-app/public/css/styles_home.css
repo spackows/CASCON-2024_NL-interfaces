@@ -1,0 +1,55 @@
+
+#projects_div, #new_project_div
+{
+margin: 0px;
+padding: 0px;
+position: absolute;
+top: 70px;
+right: 63%;
+bottom: 30%;
+left: 40px;
+/* border: 1px solid blue; */
+}
+
+#new_project_div
+{
+right: 40px;
+left: 45%;
+/* border: 1px solid green; */
+}
+
+#projects_title, #new_project_title
+{
+margin: 0px;
+padding: 0px;
+position: absolute;
+top: 0px;
+left: 0px;
+}
+
+#projects_container_div, #no_projects_container_div
+{
+margin: 0px;
+padding: 0px;
+position: absolute;
+top: 30px;
+left: 0px;
+right: 0px;
+bottom: 0px;
+/* border: 1px solid purple; */
+}
+
+#new_project_input
+{
+position: absolute;
+top: 30px;
+left: 0px;
+width: 80%;
+}
+
+#new_project_btn
+{
+position: absolute;
+top: 70px;
+left: 0px;
+}

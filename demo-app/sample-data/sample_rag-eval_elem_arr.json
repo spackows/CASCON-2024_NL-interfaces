@@ -1,0 +1,151 @@
+[
+    {
+        "element_name" : "Open filters menu button",
+        "dom_id" : "filter_icon_div",
+        "task_description" : "Clicking this opens the filters menu",
+        "actions_arr" : [ 
+            { 
+                "function" : "openFiltersMenu",
+                "values_needed_arr" : []
+            }
+        ],
+        "article_txt_arr" : [
+            "You can filter the question-answer pairs shown according to criteria such as date range and evaluation status.",
+            "The filter icon is actually a button.  You can click the icon to open the filter menu."
+        ]
+    },
+    {
+        "element_name" : "Close filters menu button",
+        "dom_id" : "filters_close_x",
+        "task_description" : "Clicking this closes the filters menu",
+        "actions_arr" : [ 
+            { 
+                "function" : "closeFiltersMenu",
+                "values_needed_arr" : []
+            }
+        ],
+        "article_txt_arr" : [
+            "You can close the filter menu by clicking the close filter X."
+        ]
+    },
+    {
+        "element_name" : "First date filter input",
+        "dom_id" : "first_date_input",
+        "task_description" : "Setting this to a date causes question-answer pairs before this date to be filtered out of the view",
+        "actions_arr" : [ 
+            { 
+                "function" : "openFiltersMenu",
+                "values_needed_arr" : []
+            },
+            { 
+                "function" : "setFirstDateInput",
+                "values_needed_arr" : [ "date_str" ]
+            }
+        ],
+        "article_txt_arr" : [
+            "You can filter the question-answer pairs shown by date.",
+            "For example, you can filter out any question-answer pairs before a given date by setting the first date filter input.",
+            "In other words, you can show only question-answer pairs starting on or after a given date by setting the first date filter input."
+        ]
+    },
+    {
+        "element_name" : "Final date filter input",
+        "dom_id" : "final_date_input",
+        "task_description" : "Setting this to a date causes question-answer pairs after this date to be filtered out of the view",
+        "actions_arr" : [ 
+            { 
+                "function" : "openFiltersMenu",
+                "values_needed_arr" : []
+            },
+            { 
+                "function" : "setFinalDateInput",
+                "values_needed_arr" : [ "date_str" ]
+            }
+        ],
+        "article_txt_arr" : [
+            "You can filter the question-answer pairs shown by date.",
+            "For example, you can filter out any question-answer pairs after a given date by setting the final date filter input.",
+            "In other words, you can show only question-answer pairs starting before or on a given date by setting the final date filter input."
+        ]
+    },
+    {
+        "element_name" : "Show evaluated filter checkbox",
+        "dom_id" : "show_evaluated_cb",
+        "task_description" : "Selecting this checkbox causes question-answer (QA) pairs that have been evaluated to be shown.",
+        "actions_arr" : [ 
+            { 
+                "function" : "openFiltersMenu",
+                "values_needed_arr" : []
+            },
+            { 
+                "function" : "setEval",
+                "values_needed_arr" : [ "checked" ]
+            }
+        ],
+        "article_txt_arr" : [
+            "When reviewing RAG application performance, it can be useful to view only question-answer (QA) pairs that have been evaluated.",
+            "You can check the evaluated YES filter checkbox to show QA pairs that have been evaluated."
+        ]
+    },
+    {
+        "element_name" : "Show unvaluated filter checkbox",
+        "dom_id" : "show_unevaluated_cb",
+        "task_description" : "Selecting this checkbox causes question-answer (QA) pairs that have not been evaluated to be shown.",
+        "actions_arr" : [ 
+            { 
+                "function" : "openFiltersMenu",
+                "values_needed_arr" : []
+            },
+            { 
+                "function" : "setUneval",
+                "values_needed_arr" : [ "checked" ]
+            }
+        ],
+        "article_txt_arr" : [
+            "When evaluating RAG application results, it can be useful to view only question-answer (QA) pairs that have not yet been evaluated.",
+            "You can check the evaluated NO filter checkbox to show QA pairs that have not been evaluated yet."
+        ]
+    },
+    {
+        "element_name" : "Random sample filter input",
+        "dom_id" : "sample_size_input",
+        "task_description" : "Specifying a number here causes that many question-answer pairs to be sub-sampled from all QA pairs.  This is useful when there is an overwhelming number of QA pairs and you just want to see a sample of them.",
+        "actions_arr" : [ 
+            { 
+                "function" : "openFiltersMenu",
+                "values_needed_arr" : []
+            },
+            { 
+                "function" : "setSampleSize",
+                "values_needed_arr" : [ "sample_size" ]
+            }
+        ],
+        "article_txt_arr" : [
+            "Sometimes, there can be so many question-answer (QA) pairs it is overwhelming to try to review them all.",
+            "When you specify a number in the random sample input in the filters menu, that many QA pairs will be subsampled from all the QA pairs."
+        ]
+    },
+    {
+        "element_name" : "Page reload button",
+        "dom_id" : "reload_btn",
+        "task_description" : "Clicking this button causes the page to reload",
+        "actions_arr" : [ 
+            { 
+                "function" : "reloadPage",
+                "values_needed_arr" : []
+            }
+        ],
+        "article_txt_arr" : [
+            "You can reload the page with the selected filters by clicking the reload page button."
+        ]
+    },
+    {
+        "element_name": "Totals",
+        "dom_id": "totals_div",
+        "task_description": "Shows totals",
+        "actions_arr": [],
+        "article_txt_arr": [
+            "Shows totals"
+        ]
+    }
+]

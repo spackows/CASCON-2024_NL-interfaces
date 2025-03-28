@@ -1,0 +1,62 @@
+
+#logs_container_div
+{
+/* border: 1px solid yellow; */
+}
+
+#logs_div
+{
+position: relative;
+margin: 0px 0px 20px 0px;
+padding: 20px;
+/* border: 1px solid maroon; */
+}
+
+#logs_tabs_ul
+{
+margin: 0px;
+padding: 0px;
+list-style: none;
+}
+
+#logs_tabs_ul li
+{
+margin: 0px 0px 8px 10px;
+padding: 0px;
+display: inline-block;
+cursor: pointer;
+border-bottom: 1px solid white;
+}
+
+#logs_tabs_ul li:hover
+{
+border-bottom: 1px solid #192231;
+}
+
+.logs_selected
+{
+font-weight: bold;
+}
+
+#logs_txt, #logs_details_txt
+{
+margin: 0px;
+padding: 10px;
+width: 90%;
+height: 160px;
+background: whitesmoke;
+border: 1px solid lightgrey;
+white-space: pre-wrap;
+overflow: auto;
+resize: vertical;
+font-family: Courier New;
+}
+
+#logs_spinner
+{
+position: absolute;
+left: 40px;
+bottom: 40px;
+}
+
+

@@ -1,0 +1,46 @@
+[
+    {
+        "prompt_name" : "Classify input",
+        "model_id"    : "google/flan-ul2",
+        "parms_json"  : { 
+            "decoding_method" : "greedy",
+            "stop_sequences"  : [ "\n" ],
+            "max_new_tokens"  : 20,
+            "min_new_tokens"  : 1 
+        },
+        "prompt_txt" : "Classify the following user input as one of: \"question\", \"action_request\", or \"none\"\n\nquestion: The user input is asking a question.  For example: \"what does this do\" or \"how do I use this?\" or \"what can I do with this?\"\n\naction_request: The user input is an instruction to take an action.  For example: \"filter out ones from january\" or \"close the menu\"\n\nnone: The user input is not a question and not an instruction to take an action.\n\nUser input: __USER_INPUT_PLACEHOLDER__\nClass: "
+    },
+    {
+        "prompt_name" : "Generate contextual help",
+        "model_id"    : "google/flan-t5-xxl",
+        "parms_json"  : { 
+            "decoding_method" : "greedy",
+            "stop_sequences"  : [ "\n" ],
+            "max_new_tokens"  : 200,
+            "min_new_tokens"  : 1 
+        },
+        "prompt_txt" : "Article:\n-------\n## Element name\n__ELEMENT_PLACEHOLDER__\n\n## Task element performs\n__TASK_PLACEHOLDER__\n\n## About this element\n__ARTICLE_PLACEHOLDER__\n-------\n\nAnswer the following question using only information from the article.\nIf there is no good answer in the article, say: \"No information is available\"\n\nQuestion: My question is about: __ELEMENT_PLACEHOLDER__.  __USER_INPUT_PLACEHOLDER__\nAnswer: "
+    },
+    {
+        "prompt_name" : "Identify elements",
+        "model_id"    : "google/flan-ul2",
+        "parms_json"  : { 
+            "decoding_method" : "greedy",
+            "stop_sequences"  : [ "\n" ],
+            "max_new_tokens"  : 20,
+            "min_new_tokens"  : 1 
+        },
+        "prompt_txt" : "A web interface has the following elements:\n\n__ELEMENTS_PLACEHOLDER__\n\nWhich element is the following user message about?\n__USER_INPUT_PLACEHOLDER__\nElement: "
+    },
+    {
+        "prompt_name" : "Identify values",
+        "model_id"    : "google/flan-t5-xxl",
+        "parms_json"  : { 
+            "decoding_method" : "greedy",
+            "stop_sequences"  : [ "\n" ],
+            "max_new_tokens"  : 20,
+            "min_new_tokens"  : 1 
+        },
+        "prompt_txt" : "What value should the element be set to?\n\nFor checkboxes, values should be yes or no.\n\nA note about dates:\n- Saying 'twenty twenty-four' and 'two thousand, twenty-four' both mean: 2024\n- Date values must always be specified like YYYY-MM-DD. For example, 'January 17th, 2022' would be: 2022-01-17.  And '2020 Feb. 13th' should be: 2020-02-13.\n\nA note about numbers:\n- Numbers should be expressed with digits 0-9 instead of words. For example, 'four' should be '4' and 'thirty' should be '30'.\n\nValue: "
+    }
+]
